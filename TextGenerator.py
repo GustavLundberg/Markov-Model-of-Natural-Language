@@ -1,9 +1,23 @@
 import numpy as np
-import tensorflow as tf
-import keras as k
+import glob
+import pandas as pd
 
-a= 5
-print(a)
-b = np.array([1, 2, 3])
-print(b)
-print('Hej')
+# List of paths to files
+#path_list = glob.glob('C:/Python_devenv/Data/BBC_sport/bbcsport-fulltext/bbcsport/athletics/[0-9]*.txt')
+
+#ref = open('C:/Python_devenv/Data/BBC_sport/bbcsport-fulltext/bbcsport/athletics/001.txt', 'r')
+
+df = pd.read_csv('C:/Users/Gustav.K.Lundberg/Downloads/transaction_data.csv')
+print(df.head(n=5))
+#for line in ref:
+#	print(line)
+#	print('-----')
+
+#for path in path_list:
+#	with open(path, 'r') as file:
+#		next(file) # Skip first line, i.e. the header
+#		for line in file:
+#			if line in ['\n', '\r\n', '\r']:
+#				continue	
+#			print(line)
+#		break
