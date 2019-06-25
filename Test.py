@@ -14,6 +14,8 @@ path_list = glob.glob('C:/Python_devenv/Data/BBC_sport/bbcsport-fulltext/bbcspor
 #	print('-----')
 
 glob_word = ''
+arr = np.array()
+print(arr)
 
 for path in path_list:
 	with open(path, 'r') as file:
